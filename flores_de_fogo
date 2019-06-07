@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+
+int main(){
+	
+	double r1, a, b, r2, c, d;
+	while(scanf("%lf %lf %lf %lf %lf %lf", &r1, &a, &b, &r2, &c, &d) != EOF){
+
+		double dist = sqrt(pow((a-c),2)+pow((b-d), 2));
+
+		if(dist <= r1-r2)printf("RICO\n");
+		else printf("MORTO\n");
+
+	}
+
+
+	return 0;
+}
